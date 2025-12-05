@@ -1,0 +1,4 @@
+# 사이트에 출력되는 한글이 네모 모양 또는 이상한 문자로 깨질 때  #
+sudo apt install -y fonts-nanum
+sudo locale-gen ko_KR.UTF-8
+sudo update-locale LANG=ko_KR.UTF-8 LC_ALL=ko_KR.UTF-8
