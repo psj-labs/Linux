@@ -1,0 +1,13 @@
+Parrot OS (UTM) 마우스 휠 반전 설정
+
+sudo apt update
+sudo apt install -y xinput
+
+입력 디바이스 확인
+xinput list
+
+아래 출력에서 ID 확인 (예: id=10)
+↳ spice vdagent tablet   id=10   [slave pointer]
+
+휠 반전 즉시 적용 (ID를 실제 값으로 교체)
+xinput set-prop 10 "libinput Natural Scrolling Enabled" 1
