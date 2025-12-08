@@ -1,1 +1,2 @@
 sudo apt install anonsurf-gtk
+sudo apt-mark hold anonsurf-gtk # 자동삭제 + 자동업데이트 완전 차단
