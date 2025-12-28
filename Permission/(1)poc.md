@@ -265,3 +265,5 @@ chown root.root a.txt
 chown .st a.txt
 ```
 ![14](/Permission/imgs/14.png)
+
+### 만약 `.`을 기준으로 변경이 안되면 `:`로 시도해봅니다.
