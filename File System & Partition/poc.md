@@ -161,11 +161,22 @@ mkdir /home1
 ```text
 mount /dev/nvme0n1p1 /home1
 ```
+
 - df 명령어로 마운트 상태를 확인합니다.
 
 ![10](/File%20System%20&%20Partition/imgs/10.png)
 
 - Primary Partition `nvme0n1p1`이 정상적으로 마운트된 것을 확인할 수 있습니다.
+
+### UUID를 사용한 마운트
+
+- `blkid | grep nvme0n1p1` 으로 UUID값을 확인후 다음과 같이 mount를 하는 방법도 있습니다.
+
+```text
+mount UUID="26ddba1b-560d-4864-8ba1-907e4b0e8832" /home1
+```
+- UUID로 mount를 하는 이유는 디바이스 이름(sda, sdb 등)이 바뀌어도 항상 같은 디스크를 정확히 마운트하기 위해서입니다.
+- UUID는 디바이스에 대응되는 고유한 식별 문자열입니다.
 
 ---
 
